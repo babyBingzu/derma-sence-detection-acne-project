@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './components/LandingPage';
+import ScanPage from './components/ScanPage';
+import ResultPage from './components/ResultPage';
+import TreatmentPage from './components/TreatmentPage';
 import './App.css';
+import { SeverityProvider } from './context/SeverityContext';
+import MildTreatment from './components/treatments/MildTreatment';
+import ModerateTreatment from './components/treatments/ModerateTreatment';
+import SevereTreatment from './components/treatments/SevereTreatment';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <SeverityProvider>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<LandingPage />} />
+                    <Route path="/scan" element={<ScanPage />} />
+                    <Route path="/result" element={<ResultPage />} />
+                    <Route path="/treatment/mild" element={<MildTreatment />} />
+                    <Route path="/treatment/moderate" element={<ModerateTreatment />} />
+                    <Route path="/treatment/severe" element={<SevereTreatment />} />
+                </Routes>
+            </Router>
+        </SeverityProvider>
+    );
 }
 
 export default App;

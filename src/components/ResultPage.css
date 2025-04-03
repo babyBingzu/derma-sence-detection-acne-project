@@ -1,0 +1,82 @@
+.result-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: clamp(10px, 3vw, 20px);
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.severity-circle {
+    width: clamp(120px, 30vw, 150px);
+    height: clamp(120px, 30vw, 150px);
+    background-color: #5CD1E5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: clamp(20px, 4vw, 30px) auto;
+}
+
+.severity-circle span {
+    color: white;
+    font-size: clamp(48px, 10vw, 72px);
+    font-weight: bold;
+}
+
+.result-page.h2 {
+    font-size: clamp(20px, 4vw, 24px);
+    padding: clamp(0px, 3vw, 20px);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: clamp(18px, 3.5vw, 20px);
+    margin: clamp(15px, 3vw, 20px) 0;
+}
+
+p {
+    font-size: clamp(14px, 2.5vw, 16px);
+    line-height: 1.6;
+    color: #666;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 clamp(10px, 2vw, 20px);
+}
+
+.treatment-button {
+    background-color: #5CD1E5;
+    color: white;
+    border: none;
+    padding: clamp(10px, 2vw, 12px) clamp(20px, 4vw, 30px);
+    border-radius: 5px;
+    font-size: clamp(14px, 2.5vw, 16px);
+    margin-top: clamp(20px, 4vw, 30px);
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+    width: auto;
+    min-width: 200px;
+    max-width: 90%;
+}
+
+.treatment-button:hover {
+    background-color: #4bb3c7;
+}
+
+@media screen and (max-width: 480px) {
+    .severity-circle {
+        margin: 15px auto;
+    }
+}
+
+.severe-title {
+    font-size: clamp(28px, 4vw, 34px);
+    color: black;
+    font-weight: bold;
+}

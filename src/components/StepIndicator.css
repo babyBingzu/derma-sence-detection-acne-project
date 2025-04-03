@@ -1,0 +1,29 @@
+.step-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Prompt', sans-serif;
+}
+
+.step.active {
+    background-color: #5CD1E5;
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
