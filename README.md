@@ -76,6 +76,28 @@ If you need to customize the configuration, you can eject it, but this is irreve
    This will start the backend at `http://localhost:8000`.
 
 ---
+## .gitignore Configuration
+
+To prevent unnecessary or sensitive files from being committed to the repository, make sure your .gitignore file includes the following:
+
+For Node.js (React Frontend)
+```.gitignore
+node_modules/
+build/
+dist/
+.env
+.DS_Store
+```
+For Python (FastAPI Backend)
+```.gitignore
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.DS_Store
+```
+Note: If you add environment variables, ensure they are stored in a .env file and listed in .gitignore to keep them secure.
 
 ## Connecting Frontend and Backend
 
