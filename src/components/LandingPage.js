@@ -24,16 +24,15 @@ const LandingPage = () => {
         <div className="landing-page">
             <div className="content">
                 <img src={faceScan} alt="Face Scan" className="face-scan-image" />
-                <h1>DermaSence</h1>
-                <h3>วิเคราะห์ระดับความรุนแรงของสิวด้วยเทคโนโลยี
-                    ปัญญาประดิษฐ์ที่มีความแม่นยำและรวดเร็วช่วยให้คุณ
-                    สามารถวางแผนในการดูแลสุขภาพผิวหน้าและการติดตาม
-                    การรักษาของคุณอย่างมีประสิทธิภาพมากยิ่งขึ้น</h3>
+                <h1>DermaSense</h1>
+                <h3>วิเคราะห์ระดับความรุนแรงของสิวด้วยเทคโนโลยีปัญญาประดิษฐ์ที่มีความแม่นยำและรวดเร็ว <br/>
+                    ช่วยให้คุณสามารถวางแผนในการดูแลสุขภาพผิวหน้า <br/>
+                    และติดตามการรักษาของคุณอย่างมีประสิทธิภาพมากยิ่งขึ้น</h3>
                 <div className="face-diagram">
                     <img src={faceIcon} alt="FaceIcon" />
                 </div>
                 <button className="start-button" onClick={handleStartScan}>
-                    Start your Acnescan
+                    Start your Acne scan
                 </button>
             </div>
 

@@ -164,7 +164,7 @@ const ScanPage = () => {
             <div className="upload-box">
                 <p className="acne-scan-title">Acne scan</p>
                 <p>
-                    จำเป็นต้องเข้าถึงรูปภาพของคุณเพื่อทำการวิเคราห์...
+                    จำเป็นต้องเข้าถึงรูปภาพของคุณเพื่อทำการวิเคราะห์...
                 </p>
             </div>
             {!showPreview ? (
