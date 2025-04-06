@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-model = YOLO("best.pt")
+model = YOLO("best8.pt")
 results = model.predict(
     source="",
     save=True,      # บันทึกภาพผลลัพธ์
