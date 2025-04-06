@@ -2,7 +2,7 @@ from ultralytics import YOLO
 
 model = YOLO("best.pt")
 results = model.predict(
-    source="your_path_file.jpg",
+    source="",
     save=True,      # บันทึกภาพผลลัพธ์
 )
 # นับจำนวน bounding boxes (จำนวนสิวที่ตรวจพบ)
