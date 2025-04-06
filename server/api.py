@@ -5,10 +5,9 @@ import numpy as np
 from ultralytics import YOLO
 import io
 from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI()
 model = YOLO("best.pt")  # โหลดโมเดล YOLO
-
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # อนุญาตทุกโดเมน หรือระบุเป็น ["http://localhost:3000"]
