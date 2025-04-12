@@ -9,6 +9,7 @@ import { SeverityProvider } from './context/SeverityContext';
 import MildTreatment from './components/treatments/MildTreatment';
 import ModerateTreatment from './components/treatments/ModerateTreatment';
 import SevereTreatment from './components/treatments/SevereTreatment';
+import UnnoticeTreatment from './components/treatments/UnnoticeTreatment';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/" element={<LandingPage />} />
                     <Route path="/scan" element={<ScanPage />} />
                     <Route path="/result" element={<ResultPage />} />
+                    <Route path="/treatment/unnotice" element={<UnnoticeTreatment/>} />
                     <Route path="/treatment/mild" element={<MildTreatment />} />
                     <Route path="/treatment/moderate" element={<ModerateTreatment />} />
                     <Route path="/treatment/severe" element={<SevereTreatment />} />

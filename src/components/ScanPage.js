@@ -136,7 +136,7 @@ const ScanPage = () => {
             // แปลงจำนวนสิวเป็นระดับความรุนแรง
             const { num_acne } = data;
             const severity =
-                num_acne > 15 ? "severe" : num_acne > 5 ? "moderate" : "mild";
+                num_acne === 0 ? "unnotice" : num_acne > 20 ? "severe" : num_acne > 6 ? "moderate" : "mild";
 
             setSeverity(severity);
             navigate('/result');

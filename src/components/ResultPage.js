@@ -5,6 +5,11 @@ import { useSeverity } from '../context/SeverityContext';
 import './ResultPage.css';
 
 const severityData = {
+    unnotice:{
+        level: 0,
+        title: <span className="severe-title">ไม่พบสิว</span>,
+        description: 'ระดับที่ไม่พบสิว (Clear Skin or Unnoticeable Acne) ไม่พบลักษณะของสิวที่ชัดเจนบนผิวหน้า อาจเป็นเพราะไม่มีสิวเกิดขึ้นจริง หรือมีสิวขนาดเล็กมากจนไม่สามารถมองเห็นหรือสัมผัสได้ชัดเจน'
+        },
     mild: {
         level: 1,
         title: <span className="severe-title">รุนแรงน้อย</span>,
